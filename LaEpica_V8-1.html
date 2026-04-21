@@ -429,9 +429,38 @@ input[type=date].inp{color-scheme:dark;}
 .rinde-val-print { display: none; }
 
 @media(max-width:600px){
-  .header{padding:0 14px;}
+  /* ── Header responsive ── */
+  .header{padding:0 10px;height:auto;min-height:56px;flex-wrap:wrap;gap:6px;padding-top:8px;padding-bottom:8px;}
+  .header-brand{gap:8px;}
+  .logo-circle{width:38px;height:38px;min-width:38px;}
+  .brand-name{font-size:.95rem;letter-spacing:1px;}
+  .brand-sub{font-size:.55rem;}
+  .header-right{gap:5px;flex-wrap:wrap;justify-content:flex-end;}
+  .btn-backup{font-size:.68rem;padding:6px 8px;border-radius:7px;}
+  .btn-owner{font-size:.7rem;padding:7px 10px;border-radius:8px;}
+  #storage-indicator{font-size:.6rem;}
+  /* ── Evitar scroll horizontal ── */
+  body{overflow-x:hidden;}
+  .container{padding:14px 10px 60px;overflow-x:hidden;}
+  /* ── Calendario ── */
+  .cal-cell{min-height:44px;padding:4px 3px;}
+  .cell-num{font-size:.8rem;}
+  .cell-vta{font-size:.58rem;}
+  .cal-month{font-size:1.3rem;}
+  /* ── Rinde y charts ── */
   .rinde-panel{grid-template-columns:1fr;}
   .charts-row{grid-template-columns:1fr;}
+  /* ── Tablas ── */
+  .data-table-wrap{overflow-x:auto;}
+  /* ── Panel dueño tabs ── */
+  .owner-nav{flex-wrap:wrap;gap:4px;}
+  .owner-tab{font-size:.7rem;padding:6px 10px;}
+}
+
+@media(max-width:400px){
+  .btn-backup{font-size:.62rem;padding:5px 6px;}
+  .btn-owner{font-size:.65rem;padding:6px 8px;}
+  .brand-name{font-size:.85rem;}
 }
 
 /* ═══ CC CLIENTES - Diseño Propio V27 ═══ */
